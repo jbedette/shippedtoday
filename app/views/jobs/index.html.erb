@@ -1,0 +1,13 @@
+# This page will show all jobs w/their associated ships
+
+<%= @message %>
+<br>
+
+<% @jobs.ships.each do |jobeach, shipeach| %>
+  <%= jobeach.jobDescription %>,
+  <%= jobeach.jobOrigin %>,
+  <%= jobeach.jobDestination %>,
+  <%= jobeach.jobCost %>,
+  <%= jobeach.jobContainersAmount %> <br>
+
+<% end %>
