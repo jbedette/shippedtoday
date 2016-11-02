@@ -21,6 +21,11 @@ html {
 	color: white;
 }
 
+#main_h1 {
+	font-family: 'Black Ops One', cursive;
+	text-align: center;
+	font-size: 60px;
+}
 #sse50 
 {
     border: solid 1px #39F;
