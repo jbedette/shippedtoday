@@ -14,4 +14,14 @@ Rails.application.routes.draw do
   patch   "/jobs/:id"          =>     "jobs#update"
   delete  "/jobs/:id"          =>     "jobs#destroy"
 
+ # Ship routes
+  get     "/ships"            	  =>     "ships#index", as: "ships"
+  get     "/ships/new"        	  =>     "ships#new", as: "new_ship"
+  post    "/ships"         	      =>     "ships#create"
+  get     "/ships/:id"            =>     "ships#show", as: "ship"
+  get     "/ships/:id/edit"       =>     "ships#edit", as: "edit_ship"
+  put     "/ships/:id"            =>     "ships#update"
+  patch   "/ships/:id"            =>     "ships#update"
+  delete  "/ships/:id"            =>     "ships#destroy"
+
 end
