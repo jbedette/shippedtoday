@@ -1,0 +1,9 @@
+<h1><%= @message %></h1>
+
+<hr>
+<h2><% @ships.each do |ship| %>
+  ID #: <%= ship.id %><br/>
+  Name: <%= ship.name %><br/>
+  No. of Containers: <%= ship.container %><br/>
+  Location: <%= ship.location %><br>
+<% end %></h2>

@@ -25,7 +25,35 @@ html {
 	font-family: 'Black Ops One', cursive;
 	text-align: center;
 	font-size: 60px;
+  color: black;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
+
+/*glow*/
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #11e3ff, 0 0 70px #11e3ff, 0 0 80px #11e3ff, 0 0 100px #11e3ff, 0 0 110px #11e3ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #11e3ff, 0 0 35px #11e3ff, 0 0 40px #11e3ff, 0 0 50px #11e3ff, 0 0 75px #11e3ff;
+  }
+}
+
+
+/* Content Styling*/
+
+#style_h2 {
+	color: red;
+	font-family: 'Audiowide', cursive;
+	text-shadow: 1px 1px black;
+	margin-bottom: 4px;
+	animation: glow 1.5s infinite alternate;
+}
+/* Navbar*/
+
 #sse50 
 {
     border: solid 1px #39F;
