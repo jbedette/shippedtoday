@@ -4,14 +4,19 @@
 <br>
 
 <% @jobs.each do |jobeach| %>
-  <%= jobeach.jobDescription %>,
-  <%= jobeach.jobOrigin %>,
-  <%= jobeach.jobDestination %>,
-  <%= jobeach.jobCost %>,
-  <%= jobeach.jobContainersAmount %> <br>
+
+  <div id="job_placement">
+    <%= jobeach.jobDescription %>,
+    <%= jobeach.jobOrigin %>,
+    <%= jobeach.jobDestination %>,
+    <%= jobeach.jobCost %>,
+    <%= jobeach.jobContainersAmount %>
+  </div>
   <%= @ships.each do |shipeach| %>
-    <%= shipeach.name %>,
-    <%= shipeach.container %>,
-    <%= shipeach.location %>
+    <div id="ship_placement">
+      <%= shipeach.name %>,
+      <%= shipeach.container %>,
+      <%= shipeach.location %>
+    </div>
   <% end %>
 <% end %>
