@@ -29,7 +29,7 @@ def index
     @ship = Ship.find(params[:id])
     @ship.update({
       name: params[:ship][:name],
-      containers: params[:ship][:containers], location: params[:ship][:location]
+      container: params[:ship][:container], location: params[:ship][:location]
     })
 
     if (@ship)
