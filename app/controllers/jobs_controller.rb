@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
 
   def index
-    @message = "This is the index page."
+    @message = "This is the INDEX page."
     @jobs = Job.all
     @ships = Ship.all
   end
