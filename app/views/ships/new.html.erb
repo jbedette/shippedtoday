@@ -1,0 +1,23 @@
+<h1>THE GALACTIC SHIP CREATOR</h1>
+<%= @message %>
+<br><br>
+
+<%= form_for @ship do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br>
+  <%= f.label :container %>
+  <%= f.text_field :container %> <br>
+  <%= f.label :location %>
+  <%= f.text_field :location %> <br>
+  <%= f.submit %>
+<% end %>
+
+<!-- error message -->
+
+<% if @ship.errors.full_messages.any? %>
+  <ul>
+    <% @ship.errors.full_messages.each do |error_message| %>
+      <li><%= error_message %></li> <br />
+    <% end %>
+  </ul>
+<% end %>
