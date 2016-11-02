@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobDescription: MyString
+  jobOrigin: MyString
+  jobDestination: MyString
+  jobCost: 1.5
+  jobContainersAmount: 1
+
+two:
+  jobDescription: MyString
+  jobOrigin: MyString
+  jobDestination: MyString
+  jobCost: 1.5
+  jobContainersAmount: 1
