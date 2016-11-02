@@ -1,13 +1,17 @@
-# This page will show all jobs w/their associated ships
+<!-- This page will show all jobs w/their associated ships -->
 
 <%= @message %>
 <br>
 
-<% @jobs.ships.each do |jobeach, shipeach| %>
+<% @jobs.each do |jobeach| %>
   <%= jobeach.jobDescription %>,
   <%= jobeach.jobOrigin %>,
   <%= jobeach.jobDestination %>,
   <%= jobeach.jobCost %>,
   <%= jobeach.jobContainersAmount %> <br>
-
+  <%= @ships.each do |shipeach| %>
+    <%= shipeach.name %>,
+    <%= shipeach.container %>,
+    <%= shipeach.location %>
+  <%= end %>
 <% end %>
