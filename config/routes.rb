@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root 'home#index', as: 'homepage'
 
+  get "/users/:id" => "users#show", as:'user'
+
   # Jobs Routes
   get     "/jobs"              =>     "jobs#index"
   get     "/jobs/new"          =>     "jobs#new"
