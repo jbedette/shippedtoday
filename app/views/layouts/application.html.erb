@@ -19,18 +19,12 @@
       <li><a href="/users">Users</a></li>
       <li><a href="/ships">Spaceships</a></li>
       <li><a href="/jobs">Jobs</a></li>
-                <li><a class="end">&nbsp;</a></li>
+      <li><a href="#">Sign Out</a></li>
+      <li><a class="end">&nbsp;</a></li>
     </ul>
   </div>
   </div>
-  <nav>
-      <% if (user_signed_in?) %>
-        <%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %>
-      <% else %>
-        <%= link_to 'Sign In', new_user_session_path %> |
-        <%= link_to 'Sign Up', new_user_registration_path %>
-      <% end %>
-    </nav>
+ 
     <%= yield %>
     <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
