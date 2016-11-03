@@ -4,10 +4,11 @@
 <br>
 
 <%= current_user.inspect %>
-<button>My Ships</button>
-<button>Add Ship</button>
-<button>My Jobs</button>
-<button>Add Jobs</button>
+
+<%= link_to "My Ships", ships_path %>
+<%= link_to "Add Ship", new_ship_path %>
+<%= link_to "My Jobs", jobs_path %>
+<%= link_to "Add Jobs", jobs_new_path %>
 
 <br>
 <br>
