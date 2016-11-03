@@ -11,7 +11,10 @@ def index
   end
 
   def create
-  	@message = "Message here!!!"
+  	@ship = Ship.new(ship_params)
+    @ship.save
+    redirect_to ship_path(@ship)
+
   end
 
 
@@ -45,7 +48,12 @@ def index
   end
 
 
+  private
 
+  def ship_params
+    params.require(:ship).permit(:name, :container, :location)
+
+  end
 
 
 end
