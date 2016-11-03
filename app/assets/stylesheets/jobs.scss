@@ -8,7 +8,13 @@
 #ship_placement{
   margin-left: 150px;
 }
-#createJob{
+.page_header{
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  text-decoration: underline;
+}
+.align_job{
   text-align: right;
   margin-right: 35%;
   font-size: 52px;
@@ -29,4 +35,40 @@ label.labelStyle{
   margin-right: 13%;
 	border-radius: 45px;
 	border: 4px solid rgba(50,50,100,.8);
+}
+table, th, td {
+    border: 1px solid white;
+}
+table{
+  margin: auto;
+}
+th{
+  text-align: center;
+}
+.w1 {
+  width: 70px;
+  text-align: right;
+}
+.w1a {
+  width: 70px;
+}
+.w2{
+  width: 150px;
+  text-align: center;
+}
+.w3{
+  width: 80px;
+  text-align: center;
+}
+.w4{
+  width: 120px;
+  text-align: center;
+}
+.w5{
+  width: 100px;
+  text-align: center;
+}
+.w6{
+  width: 130px;
+  text-align: center;
 }
