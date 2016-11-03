@@ -4,28 +4,27 @@
 </div>
 <br>
 
+<table>
+  <tr>
+    <th class="w1a">id</th>
+    <th class="w2">Description</th>
+    <th class="w3">Origin</th>
+    <th class="w4">Destination</th>
+    <th class="w5">Cost</th>
+    <th class="w6">Containers/Job</th>
+  </tr>
+</table>
 <% @jobs.each do |jobeach| %>
   <div id="job_placement">
-    <tb>
+    <table>
       <tr>
-        <%= jobeach.id %>.
-      </tr>
-      <tr>
-        <%= jobeach.jobDescription %>
-      </tr>
-      <tr>
-        <%= jobeach.jobOrigin %>,
-      </tr>
-      <tr>
-        <%= jobeach.jobDestination %>,
-      </tr>
-      <tr>
-        <%= jobeach.jobCost %>,
-      </tr>
-      <tr>
-        <%= jobeach.jobContainersAmount %>
-      </tr>
-    </tb>
+        <td class="w1"><%= jobeach.id %></td>
+        <td class="w2"><%= jobeach.jobDescription %></td>
+        <td class="w3"><%= jobeach.jobOrigin %></td>
+        <td class="w4"><%= jobeach.jobDestination %></td>
+        <td class="w5"><%= jobeach.jobCost %></td>
+        <td class="w6"><%= jobeach.jobContainersAmount %></td>
+    </table>
   </div>
   <!-- <%= @ships.each do |shipeach| %>
     <div id="ship_placement">
