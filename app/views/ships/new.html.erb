@@ -2,6 +2,7 @@
 <%= @message %>
 <br><br>
 
+<% if current_user %>
 <%= form_for @ship, url: new_ship_path do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %> <br>
@@ -11,7 +12,9 @@
   <%= f.text_field :location %> <br>
   <%= f.submit %>
 <% end %>
-
+<% else %>
+  <p>u suk</p>
+<% end %>
 <!-- error message -->
 
 <% if @ship.errors.full_messages.any? %>
