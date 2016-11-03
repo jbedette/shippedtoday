@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   get "/users/:id" => "users#show", as:'user'
 
   # Jobs Routes
-  get     "/jobs"              =>     "jobs#index"
-  get     "/jobs/new"          =>     "jobs#new"
-  post    "/jobs"              =>     "jobs#create"
-  get     "/jobs/:id"          =>     "jobs#show"
-  get     "/jobs/:id/edit"     =>     "jobs#edit"
+  get     "/jobs"              =>     "jobs#index", as: "jobs"
+  get     "/jobs/new"          =>     "jobs#new", as: "new_job"
+  post    "/jobs/new"          =>     "jobs#create"
+  get     "/jobs/:id"          =>     "jobs#show", as: "job"
+  get     "/jobs/:id/edit"     =>     "jobs#edit", as: "edit_job"
   put     "/jobs/:id"          =>     "jobs#update"
   patch   "/jobs/:id"          =>     "jobs#update"
   delete  "/jobs/:id"          =>     "jobs#destroy"

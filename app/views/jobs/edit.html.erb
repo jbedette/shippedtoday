@@ -1,4 +1,19 @@
+<div class="page_header">
+  <%= @message %>
+</div>
 
-<%= @message %>
-
-<br><br>
+<div class="align_job">
+  <%= form_for :job, url: edit_job_path do |job|%>
+    <%= label_tag "jobDescription", "Job Description: ", :class => "labelStyle" %>
+    <%= job.text_field :jobDescription, placeholder: "Description", :autofocus=>true, :class => "fieldStyle" %><br>
+    <%= label_tag "jobOrigin", "Job Origin: ", :class => "labelStyle" %>
+    <%= job.text_field :jobOrigin, placeholder: "Origin", :class => "fieldStyle" %><br>
+    <%= label_tag "jobDestination", "Job Destination: ", :class => "labelStyle" %>
+    <%= job.text_field :jobDestination, placeholder: "Destination", :class => "fieldStyle" %><br>
+    <%= label_tag "jobCost", "Job Cost: ", :class => "labelStyle" %>
+    <%= job.text_field :jobCost, placeholder: "Cost", :class => "fieldStyle" %><br>
+    <%= label_tag "jobContainersAmount", "# of Containers / Job: ", :class => "labelStyle" %>
+    <%= job.text_field :jobContainersAmount, placeholder: "Qty of Containers", :class => "fieldStyle" %><br>
+    <%= job.submit "Submit", :class => "buttonJobSave" %>
+  <% end %>
+</div>

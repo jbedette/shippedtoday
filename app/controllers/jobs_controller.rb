@@ -7,11 +7,19 @@ class JobsController < ApplicationController
   end
 
   def new
-    @message = "This is the new page."
+    @job = Job.new
+    @message = "Create New Job Here"
   end
 
   def create
-    # There is no view for the create action.
+    @job = Job.new(job_params)
+
+    if @job.save
+      redirect_to url_for(:controller => :jobs, :action => :index)
+    else
+      # render the view named "new"
+      render :new
+    end
   end
 
   def show
@@ -19,7 +27,7 @@ class JobsController < ApplicationController
   end
 
   def edit
-    @message = "This is the edit page."
+    @message = "Edit Job Here"
   end
 
   def update
@@ -30,5 +38,11 @@ class JobsController < ApplicationController
     # There is no view for the destroy  action.
   end
 
+  private
+
+  def job_params
+
+    params.require(:job).permit(:jobDescription, :jobOrigin, :jobDestination, :jobCost, :jobContainersAmount)
+  end
 
 end

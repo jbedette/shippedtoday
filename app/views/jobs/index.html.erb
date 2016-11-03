@@ -1,22 +1,37 @@
 <!-- This page will show all jobs w/their associated ships -->
-
-<%= @message %>
+<div class="page_header">
+  <%= @message %>
+</div>
 <br>
 
 <% @jobs.each do |jobeach| %>
-
   <div id="job_placement">
-    <%= jobeach.jobDescription %>,
-    <%= jobeach.jobOrigin %>,
-    <%= jobeach.jobDestination %>,
-    <%= jobeach.jobCost %>,
-    <%= jobeach.jobContainersAmount %>
+    <tb>
+      <tr>
+        <%= jobeach.id %>.
+      </tr>
+      <tr>
+        <%= jobeach.jobDescription %>
+      </tr>
+      <tr>
+        <%= jobeach.jobOrigin %>,
+      </tr>
+      <tr>
+        <%= jobeach.jobDestination %>,
+      </tr>
+      <tr>
+        <%= jobeach.jobCost %>,
+      </tr>
+      <tr>
+        <%= jobeach.jobContainersAmount %>
+      </tr>
+    </tb>
   </div>
-  <%= @ships.each do |shipeach| %>
+  <!-- <%= @ships.each do |shipeach| %>
     <div id="ship_placement">
       <%= shipeach.name %>,
       <%= shipeach.container %>,
       <%= shipeach.location %>
     </div>
-  <% end %>
+  <% end %> -->
 <% end %>
