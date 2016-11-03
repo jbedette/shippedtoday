@@ -14,7 +14,7 @@ def index
   	@message = "Message here!!!"
   end
 
-  
+
   def show
     @message = "This is a Spaceship show page. Take me to your leader!!"
     @ship = Ship.find(params[:id])
@@ -47,5 +47,5 @@ def index
 
 
 
-	
+
 end

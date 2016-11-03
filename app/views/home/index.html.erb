@@ -1,3 +1,15 @@
 <%= @message %>
-
+<br>
+<marquee> Let's get your vaulables and assets off planet before Earth becomes a total wasteland! Act today. Those robot overlords will not wait!</marquee>
 <h1 id="main_h1">Interplanetary Shipping Inc.</h1>
+<img id="logo" src="assets/ip_logo.JPG"/>
+<div id="sign_btn">
+ <nav>
+      <% if (user_signed_in?) %>
+        <%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %>
+      <% else %>
+        <%= link_to 'Sign In', new_user_session_path %> |
+        <%= link_to 'Sign Up', new_user_registration_path %>
+      <% end %>
+    </nav>
+</div>

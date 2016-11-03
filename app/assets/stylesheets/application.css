@@ -45,12 +45,29 @@ html {
 
 /* Content Styling*/
 
+marquee {
+  font-family: 'Share Tech Mono', monospace;
+  color: yellow;
+}
+
 #style_h2 {
 	color: red;
 	font-family: 'Audiowide', cursive;
 	text-shadow: 1px 1px black;
 	margin-bottom: 4px;
 	animation: glow 1.5s infinite alternate;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  height: 240px;
+  border-radius: 115%;
+}
+
+#sign_btn {
+  text-align: center;
+  font-size: 24px;
 }
 /* Navbar*/
 
