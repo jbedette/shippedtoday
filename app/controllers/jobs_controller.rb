@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
 
   def index
-    @message = "List of available jobs..."
+    @message = "List of Available Jobs"
     @jobs = Job.all
     @ships = Ship.all
   end
