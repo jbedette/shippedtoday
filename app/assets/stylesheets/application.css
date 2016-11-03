@@ -45,6 +45,11 @@ html {
 
 /* Content Styling*/
 
+marquee {
+  font-family: 'Share Tech Mono', monospace;
+  color: yellow;
+}
+
 #style_h2 {
 	color: red;
 	font-family: 'Audiowide', cursive;
