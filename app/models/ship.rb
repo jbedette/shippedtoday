@@ -1,4 +1,6 @@
 class Ship < ApplicationRecord
-	has_many :jobs
+	
 	belongs_to :user
+	has_many :contracts
+  has_many :jobs, through: :contracts
 end
