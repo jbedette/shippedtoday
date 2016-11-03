@@ -2,3 +2,19 @@
 <%= @message %>
 
 <br><br>
+
+<div id="createJob">
+  <%= form_for :job, url: jobs_new_path do |job|%>
+    <%= label_tag "jobDescription", "Job Description: ", :class => "labelStyle" %>
+    <%= job.text_field :jobDescription, placeholder: "Job Description", :autofocus=>true, :class => "fieldStyle" %><br>
+    <%= label_tag "jobOrigin", "Job Origin: ", :class => "labelStyle" %>
+    <%= job.text_field :jobOrigin, placeholder: "Job Origin", :class => "fieldStyle" %><br>
+    <%= label_tag "jobDestination", "Job Destination: ", :class => "labelStyle" %>
+    <%= job.text_field :jobDestination, placeholder: "Job Destination", :class => "fieldStyle" %><br>
+    <%= label_tag "jobCost", "Job Cost: ", :class => "labelStyle" %>
+    <%= job.text_field :jobCost, placeholder: "Job Cost", :class => "fieldStyle" %><br>
+    <%= label_tag "jobContainersAmount", "# of Containers / Job: ", :class => "labelStyle" %>
+    <%= job.text_field :jobContainersAmount, placeholder: "Qty of Containers", :class => "fieldStyle" %><br>
+    <%= job.submit "Save", :class => "buttonJobSave" %>
+  <% end %>
+</div>
