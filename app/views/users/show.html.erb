@@ -4,14 +4,14 @@
 <br>
 
 <%= current_user.inspect %>
-
+<div class="usernav">
 <h4 class="push_button blue"><%= link_to "My Ships", user_ship_path(:id, :user_id) %></h4>
- <h4 class="push_button yellow"><%= link_to "Add Ship", new_user_ship_path(:user_id) %></h4>
+ <h4 class="push_button yellow"><%= link_to "Add Ship", new_user_ship_path(current_user) %></h4>
  <h4 class="push_button green"><%= link_to "Take Jobs" %></h4>
  <h4 class="push_button blue"><%= link_to "My Jobs", jobs_path %></h4>
   <h4 class="push_button yellow"><%= link_to "Add Jobs", jobs_new_path %></h4>
  <h4 class="push_button red"><%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %></h4>
-
+</div>
 
 
 <br>

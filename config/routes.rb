@@ -19,10 +19,12 @@ Rails.application.routes.draw do
   # get "/users/:id" => "users#show", as:'user'
 
   # ships routes
-  get "/users/:user_id/ships/new", to: 'ships#new'
-  post "/users/:user_id/ships/new", to: 'ships#create'
+  # get "/users/:user_id/ships/new", to: 'ships#new'
+  # post "/users/:user_id/ships/new", to: 'ships#create'
 
   # Jobs Routes
+  # resources :jobs
+
   get     "/jobs"              =>     "jobs#index", as: "jobs"
   get     "/jobs/new"          =>     "jobs#new", as: "new_job"
   post    "/jobs/new"          =>     "jobs#create"
@@ -31,9 +33,4 @@ Rails.application.routes.draw do
   put     "/jobs/:id"          =>     "jobs#update"
   patch   "/jobs/:id"          =>     "jobs#update"
   delete  "/jobs/:id"          =>     "jobs#destroy"
-
-
-
-
-
 end

@@ -15,9 +15,14 @@ def index
 
   def create
   	@ship = Ship.new(ship_params)
-    @ship.save
-    redirect_to user_ship_path()
 
+    if @ship.save
+      redirect_to user_ship_path(current_user, @ship)
+    else
+      Rails.logger.info "################### it didn't work ###################"
+      Rails.logger.info @ship.errors.full_messages
+      Rails.logger.info "################### it didn't work ###################"
+    end
   end
 
 
