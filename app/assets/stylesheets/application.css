@@ -17,7 +17,7 @@
 
 html {
 	background: url("stars.jpg")no-repeat center center fixed;
-	background-size: 100%;
+  background-size: cover;
 	color: white;
 }
 
@@ -33,6 +33,17 @@ html {
  #logging {
     display: inline-block;
     margin: 0 auto;
+ }
+
+ #logging2 {
+      display: inline-block;
+      margin: 0 auto;
+ }
+
+ #sign_btn2 {
+
+  text-align: center;
+  font-size: 18px;
  }
 /*glow*/
 
@@ -120,6 +131,9 @@ color: red;
     width:2px;
     padding-left:0;padding-right:0;
 }
+
+/*End NAVBAR */
+
 .page_header{
   text-align: center;
   color: white;
