@@ -7,7 +7,7 @@ def index
 
   def new
     @ship = Ship.new
-    @message = "This is the new Spaceship form."
+    @message = "Enter spaceship data below..."
     unless current_user
       redirect_to unauthenticated_root_path
     end
