@@ -3,7 +3,8 @@
 <br><br>
 
 <% if current_user %>
-<%= form_for @ship, url: new_user_ship_path do |f| %>
+<%= form_for ([current_user, @ship]) do |f| %>
+  <%= hidden_field_tag "ship[user_id]", current_user.id %>
   <%= f.label :name %>
   <%= f.text_field :name %> <br>
   <%= f.label :container %>
