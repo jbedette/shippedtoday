@@ -16,14 +16,14 @@ def index
   def create
   	@ship = Ship.new(ship_params)
     @ship.save
-    redirect_to ship_path(@ship)
+    redirect_to user_ship_path()
 
   end
 
 
   def show
     @message = "This is a Spaceship show page. Take me to your leader!!"
-    @ship = Ship.find(params[:id])
+    @ship = Ship.find(params[:user_id])
   end
 
   def edit
@@ -54,7 +54,7 @@ def index
   private
 
   def ship_params
-    params.require(:ship).permit(:name, :container, :location)
+    params.require(:ship).permit(:user_id, :name, :container, :location)
 
   end
 
