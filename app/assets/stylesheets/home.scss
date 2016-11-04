@@ -4,7 +4,9 @@
 
 
 /* Buttons for Main Page */
-
+ a.hover {
+ 	cursor: crosshair;
+ }
 .push_button {
 	position: relative;
 	width:175px;
@@ -44,7 +46,7 @@
 	text-shadow:-1px -1px 0 #A84155;
 	background: #D25068;
 	border:1px solid #D25068;
-	background-image:linear-gradient(to bottom, #cc0000, black);
+	background-image:linear-gradient(to bottom, #cc0000, #470505);
 	border-radius:30px;
 	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
 }
@@ -52,13 +54,14 @@
 .red:hover {
 	background: #F66C7B;
 	background-image:linear-gradient(top, #D25068, #F66C7B);
+	cursor: crosshair;
 }
 
 .blue {
 	text-shadow:-1px -1px 0 #2C7982;
 	background: #3EACBA;
 	border:1px solid #379AA4;
-	background-image:linear-gradient(top, #419ab3, #3EACBA);
+	background-image:linear-gradient(to bottom, #419ab3, #215e70);
 	border-radius:30px;
 	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
 }
@@ -66,4 +69,5 @@
 .blue:hover {
 	background: #48C6D4;
 	background-image:linear-gradient(top, #3EACBA, #48C6D4);
+	cursor: crosshair;
 }
