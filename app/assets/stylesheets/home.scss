@@ -20,9 +20,9 @@
 .push_button:before {
 	background:#f0f0f0;
 	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));
-	border-radius:30px; 
+	border-radius:30px;
 	box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
-	
+
 	position: absolute;
 	content: "";
 	left: -6px; right: -6px;
@@ -65,5 +65,33 @@
 
 .blue:hover {
 	background: #48C6D4;
+	background-image:linear-gradient(top, #3EACBA, #48C6D4);
+}
+
+.yellow {
+	text-shadow:-1px -1px 0 #2C7982;
+	background: #ffd700;
+	border:1px solid #daa520;
+	background-image:linear-gradient(top, #419ab3, #3EACBA);
+	border-radius:30px;
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #daa520, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+.yellow:hover {
+	background: #ffff00;
+	background-image:linear-gradient(top, #3EACBA, #48C6D4);
+}
+
+.green {
+	text-shadow:-1px -1px 0 #2C7982;
+	background: #008000;
+	border:1px solid #006400;
+	background-image:linear-gradient(top, #419ab3, #3EACBA);
+	border-radius:30px;
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #006400, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+.green:hover {
+	background: #228b22;
 	background-image:linear-gradient(top, #3EACBA, #48C6D4);
 }
