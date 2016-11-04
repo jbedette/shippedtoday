@@ -30,7 +30,10 @@ html {
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
-
+ #logging {
+    display: inline-block;
+    margin: 0 auto;
+ }
 /*glow*/
 
 @keyframes neon1 {
@@ -49,7 +52,10 @@ marquee {
   font-family: 'Share Tech Mono', monospace;
   color: yellow;
 }
+#front_btn {
+color: red;
 
+}
 #style_h2 {
 	color: red;
 	font-family: 'Audiowide', cursive;
