@@ -5,10 +5,13 @@
 
 <%= current_user.inspect %>
 
-<%= link_to "My Ships", ships_path %>
-<%= link_to "Add Ship", new_ship_path %>
+<%= link_to "My Ships", user_ship_path(:id, :user_id) %>
+<%= link_to "Add Ship", new_user_ship_path(:user_id) %>
+<%= link_to "Take Jobs" %>
 <%= link_to "My Jobs", jobs_path %>
 <%= link_to "Add Jobs", jobs_new_path %>
+<%= link_to 'Sign Out',  { :action=>"destroy", :controller=>"devise/sessions" }, method: :delete  %>
+
 
 <br>
 <br>
