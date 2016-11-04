@@ -11,7 +11,7 @@
     <%= label_tag "jobDestination", "Job Destination: ", :class => "labelStyle" %>
     <%= job.text_field :jobDestination, placeholder: "Destination", :class => "fieldStyle" %><br>
     <%= label_tag "jobCost", "Job Cost: ", :class => "labelStyle" %>
-    <%= job.text_field :jobCost, placeholder: "ie. 2000250", :class => "fieldStyle" %><br>
+    <%= job.text_field :jobCost, placeholder: "ie. 2000250.00", :class => "fieldStyle" %><br>
     <%= label_tag "jobContainersAmount", "# of Containers / Job: ", :class => "labelStyle" %>
     <%= job.text_field :jobContainersAmount, placeholder: "Qty of Containers", :class => "fieldStyle" %><br>
     <%= job.submit "Save", :class => "buttonJobSave" %>
