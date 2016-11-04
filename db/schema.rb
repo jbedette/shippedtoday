@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20161104191954) do
   end
 
   create_table "ships", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "name"
     t.integer  "container"
     t.string   "location"
