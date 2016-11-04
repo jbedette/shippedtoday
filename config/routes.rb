@@ -19,8 +19,8 @@ Rails.application.routes.draw do
   # get "/users/:id" => "users#show", as:'user'
 
   # ships routes
-  get "/ships/new", to: 'ships#new'
-  post "/ships/new", to: 'ships#create'
+  get "/users/:user_id/ships/new", to: 'ships#new'
+  post "/users/:user_id/ships/new", to: 'ships#create'
 
   # Jobs Routes
   get     "/jobs"              =>     "jobs#index", as: "jobs"
